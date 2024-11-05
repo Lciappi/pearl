@@ -13,21 +13,16 @@ client.login(process.env.DISCORD_TOKEN);
 
 const trashChannelId = '1303271594881454143';
 
-const users = ['.tanguita1','leocia', 'katodiaz'];
+const users = ['leocia', '.tanguita1', 'katodiaz'];
 
 const taskDates = [
-    new Date('2024-11-12T09:00:00'), // Example date 1
-    new Date('2024-11-19T09:00:00'), // Example date 2
-    new Date('2024-11-26T09:00:00'), // Example date 3
-    // Add more dates as needed
+    new Date('2024-11-05T12:45:00'), // Example date 1
 ];
 
 
 let last_user_index = 0;
 
 import { Client, GatewayIntentBits, ActionRowBuilder, ButtonBuilder, ButtonStyle, Events } from 'discord.js';
-
-// ... other parts of the code remain the same ...
 
 // In the task scheduling section, send a message with a button
 taskDates.forEach((date) => {
