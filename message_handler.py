@@ -72,7 +72,7 @@ class MessageHandler:
                 message = f"{user.mention},{self.get_encouraging_message(False)}"
                 button_view = MyView(self.completed)
                 await channel.send(message, view=button_view)
-                await asyncio.sleep(3600)
+                await asyncio.sleep(3700)
                 if not self.completed[0]:
                     await channel.send(f"{user.mention},{self.get_encouraging_message(True)}")
             else:

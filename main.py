@@ -33,13 +33,13 @@ async def execute_at_specific_time(target_date, target_time, func, user):
     await func(user)
 
 async def send_message(user):
-    await message_handler.send_custom_message(1305347901416800336, user, "remind")
+    await message_handler.send_custom_message(1303271594881454143, user, "remind")
 
 @bot.event
 async def on_ready():
     print("Bot is ready")
     #TODO: update channel id
-    await message_handler.send_welcome_message(1305347901416800336)
+    await message_handler.send_welcome_message(1303271594881454143)
 
     schedule = [    
         ("2024-11-11", "02:44:00"),
